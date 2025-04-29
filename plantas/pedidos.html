@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Pedido - Tu Empresa de Plantas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/plantas/styles/style2.css">
+
+</head>
+<body>
+    <header class="bg-light py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <img src="/plantas/img/logo.png" alt="Logo de la empresa" class="img-fluid" style="max-height: 400px;">
+                </div>
+                <div class="col-md-8 text-right">
+                    <h2>La opción para decorar con plantas y flores</h2>
+                    <nav>
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="pedidos.html">Pedidos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <section class="py-4">
+            <h2>Realizar un Pedido</h2>
+            <p>Por favor, completa el siguiente formulario para realizar tu pedido. Nos pondremos en contacto contigo lo antes posible para confirmar los detalles y el presupuesto final.</p>
+            <form>
+                <div class="form-group">
+                    <label for="nombreEmpresa">Nombre de la empresa solicitante</label>
+                    <input type="text" class="form-control" id="nombreEmpresa" placeholder="Introduce el nombre de tu empresa">
+                </div>
+                <div class="form-group">
+                    <label for="emailSolicitante">Email del solicitante</label>
+                    <input type="email" class="form-control" id="emailSolicitante" placeholder="Introduce tu email">
+                </div>
+                <div class="form-group">
+                    <label for="clasePedido">Clase de pedido</label>
+                    <select class="form-control" id="clasePedido">
+                        <option>Jardín para eventos</option>
+                        <option>Decoración de iglesias</option>
+                        <option>Ramos personalizados</option>
+                        <option>Otro (especificar en observaciones)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="colorPreferido">Color preferido</label>
+                    <input type="color" class="form-control" id="colorPreferido">
+                </div>
+                <div class="form-group">
+                    <label for="presupuesto">Presupuesto €</label>
+                    <input type="number" class="form-control" id="presupuesto" placeholder="Introduce tu presupuesto">
+                </div>
+                <div class="form-group">
+                    <label for="observaciones">Observaciones</label>
+                    <textarea class="form-control" id="observaciones" rows="4" placeholder="Introduce cualquier observación adicional"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Pedido</button>
+                <button type="reset" class="btn btn-secondary">Limpiar Formulario</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="py-3 mt-4">
+        <div class="container">
+            <p class="mb-0">Contacto: Calle Ficticia, 123, Barcelona - Teléfono: 935 000 000 - Email: info@tuempresadeplantas.com</p>
+            <p class="mb-0"><a href="#">Volver arriba</a></p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
